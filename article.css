@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'sab';
+   src:  url('font/Sabon\ Roman\ Small\ Caps\ &\ Oldstyle\ Figures.ttf') ;
+}
+
+html{
+  scroll-behavior:smooth !important;
+}
+body{
+  /* overflow-x: hidden; */
+    margin: 0;
+    padding: 0;
+    background-color: #151515;
+    font-family: 'sab';
+    
+}
+
+.card-article{
+  margin-top: 200px;
+
+}
+.img-asli{
+  /* margin: 30px 10px 0px; */
+  margin-top: 60px;
+  
+    object-fit: cover;
+    float: right;
+}
+.boxx{
+  position: relative;
+  display:inline;
+}
+.card-article p{
+  color: #6b6c70 !important;
+}
+h4{
+  color: #9e9fa1;
+  letter-spacing: 1px;
+  color: #E1A95F;
+
+}
+h6{
+  color: #926e40;
+  font-family: sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+}

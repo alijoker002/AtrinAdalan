@@ -1,0 +1,59 @@
+
+@font-face {
+    font-family: 'sab';
+   src:  url('font/Sabon\ Roman\ Small\ Caps\ &\ Oldstyle\ Figures.ttf') ;
+  }
+  html, body {
+    position: relative;
+    height: 100%;
+    font-family: 'sab';
+  }
+  body {
+    background-color: #151515;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .text-header{
+    font-size: 35px;
+    letter-spacing: 2px;
+    color:  #E1A95F ;
+    margin-top: 12rem;
+  }
+  .text-header span{
+    font-size: 26px;
+    letter-spacing: 2px;
+    color:  #E1A95F ;
+    opacity: .5 ;
+   
+  }
+  
+  /*----------------------------------------body video-------------------------------*/
+  .video-top{
+    width: 100%;
+  
+  }
+  .video-bottom{
+  width: 25%;
+  }
+  video{
+    cursor: pointer;
+  }
+
+
+  /*----------------------------------------body video-------------------------------*/
+  
+ h4{
+     color: rgb(218, 175, 119);
+     margin-top: 20px;
+     letter-spacing: 1px;
+ }
+ p{
+    color: #959698;
+    margin-top: 20px;
+    letter-spacing: 1px;
+ }
+ .history{
+     color: #E1A95F;
+     letter-spacing: 1px;
+ }

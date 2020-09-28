@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    
+        <link rel="stylesheet" href="./css/bootstrap.min.css" >
+    
+    
+          <!-- Link Swiper's CSS -->
+     <!-- <link rel="stylesheet" href="swiper.min.css"> -->
+
+       <link rel="stylesheet" href="galleres-sliders.css">
+      <link rel="stylesheet" href="navbar.css"/>
+      <link rel="stylesheet" href="footer.css"/>
+    </head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark  fixed-top ">
+
+        <a class="navbar-brand" href="#"><img class="atrin-logo" src="img/about us/adalanmusic.png" alt="logo atrin adalan">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="home page.html">Home</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="#news">Last News</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#radio">Radio Opera</a>
+              </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#gallery">Galleries</a>
+                </li>
+               
+                <li class="nav-item ">
+                    <a class="nav-link" href="#music">Music</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#aducation">Aducation </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#shop">Shop</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#contact">Contac Us</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="#music">Live</a>
+              </li>
+            </ul>
+    
+            <button class="btn-nav-search" ><i class="fa fa-search"  onclick="openSearch()"></i></button>
+            <form class="form-inline my-2 my-lg-0">
+                <button class="btn btn-nav-singup my-2 my-sm-0 btnfos-4"  type="button"     data-toggle="modal" data-target="#example2ModalCenter"><span>Sing Up</span>  </button>
+                <button class="btn btn-nav-login my-2 my-sm-0 btnfos-4" type="button"  data-toggle="modal" data-target="#exampleModalCenter"><span>Log In</span> </a> </button>
+            </form>
+    
+          </div>
+      </nav>
+    
+    
+      
+      
+            <!-- -----------------------------------------------------------------modal search -------------------------------------------------------------------------------------------- -->
+                  
+            <div id="myOverlay" class="overlay-search" >
+    
+                <span class="closebtn" onclick="closeSearch()" >&times;</span>
+                <div class="overlay-content ">
+                  <form action="/action_page.php">
+                    <input class="col-12 " type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                  </form>
+                </div>
+              </div>
+              <!-- -----------------------------------------------------------------end modal search -------------------------------------------------------------------------------------------- -->
+             <!-- -----------------------------------------------------------------modal log in -------------------------------------------------------------------------------------------- -->      
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content ">
+                            <div class="modal-header ">
+                              <h5 class="modal-title" id="exampleModalLongTitle">Log in</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span class="close" aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                                  
+                                <!--   user name Input-->
+                                   <input class="form-input" id="txt-input" type="text" placeholder="user name" required>
+                                   <br>
+                                <!--   Password Input-->
+                                <input class="form-input" type="password" placeholder="password" id="pwd"  name="password" required>
+                              
+                             </div>         
+                                     
+                             
+    
+                              <div class="modal-footer">
+                                <p style="margin-top: 20px;opacity: .5;"><a href="" style="color: #eeeeee;font-size: 14px;margin-right: 240px;"> forget password ? </a></p>
+                                <button type="button" class="btn  btn-modal">log  in</button>
+                              </div></div>
+                          </div>
+                        </div>
+                    
+            <!-- -----------------------------------------------------------------end modal log in -------------------------------------------------------------------------------------------- -->
+            <!-- ----------------------------------------------------------------- modal sing up -------------------------------------------------------------------------------------------- -->
+    
+                      <div class="modal fade" id="example2ModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content ">
+                            <div class="modal-header ">
+                              <h5 class="modal-title" id="exampleModalLongTitle">Sing Up</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span class="close" aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                                  
+                                  <!--   user name Input-->
+                                   <input class="form-input" id="txt-input" type="text" placeholder="name" required>
+                                <br>
+                                <input class="form-input" id="txt-input" type="text" placeholder="name" required>
+                                <br>
+                                <input class="form-input" id="email" type="email" placeholder="email" required>
+                                <br>
+                                <!--   Password Input-->
+                                <input class="form-input" type="password" placeholder="password" id="pwd"  name="password" required>
+                              
+                             </div>         
+                                             
+                              <div class="modal-footer">
+                                <button type="button" class="btn  btn-modal">sing up</button>
+                              </div></div>
+                          </div>
+                        </div>
+                    
+        <!-------------------------------------------------------------------end modal sing up-------------------------------------------------------------------------------------------- -->
+    
+
+
+  <!-------------------------------------------------------------------video-------------------------------------------------------------------------------------------- -->
+
+  <div class="container">
+
+    <p class="text-header">
+     Live<div class="diere"></div>
+    </p>
+    </div>
+
+      <!-- video-top -->
+      <div class="container ">
+          <div class="row">
+<div class="col-1"></div>
+            <div class=" col-lg-10 col-md-10 col-sm-12 col-xs-12   py-5">
+                <video class="video-top" controls>
+                    <source src="video/1.mp4" type="video/mp4">
+                    <source src="video/1.ogg" type="video/ogg">
+                    Your browser does not support HTML video.
+                  </video>
+             </div>
+
+          </div>
+        
+      </div> <!--end video-top -->
+
+
+
+
+
+      <div class="container-fluid">
+        <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 "> <!-- video -->
+                  <div class="col-12"> <a href="#"> <video class="video-top" data-play="hover" muted  >
+                      <source src="video/1.mp4" type="video/mp4">
+                      <source src="video/1.ogg" type="video/ogg">
+                      Your browser does not support HTML video.
+                      </video></a>
+                    </div>
+                  <div class="col-12">
+                    <h4>SUBJECT LIVE ONE</h4>
+                    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus rem pariatur similique dolore. Nisi, harum?</P>
+                  </div>
+                  <div class="col-12">
+                    <h7 class="float-right history">20,may,2020</h7>
+                  </div>
+              </div> <!--end video -->
+
+              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12"> <!-- video -->
+                <div class="col-12"> <a href="#"> <video class="video-top" data-play="hover" muted  >
+                  <source src="video/1.mp4" type="video/mp4">
+                  <source src="video/1.ogg" type="video/ogg">
+                  Your browser does not support HTML video.
+                  </video></a>
+              </div>
+              <div class="col-12">
+                <h4>SUBJECT LIVE TWO</h4>
+                <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus rem pariatur similique dolore. Nisi, harum?</P>
+              </div>
+            <div class="col-12">
+                <h7 class="float-right history">20,may,2020</h7>
+            </div>
+            </div> <!--end video -->
+
+
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12"> <!-- video -->
+              <div class="col-12"> <a href="#"> <video class="video-top" data-play="hover" muted  >
+                <source src="video/1.mp4" type="video/mp4">
+                <source src="video/1.ogg" type="video/ogg">
+                Your browser does not support HTML video.
+                </video></a>
+            </div>
+            <div class="col-12">
+              <h4>SUBJECT LIVE ONE</h4>
+              <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus rem pariatur similique dolore. Nisi, harum?</P>
+            </div>
+          <div class="col-12">
+              <h7 class="float-right history">20,may,2020</h7>
+          </div>
+          </div> <!--end video -->
+
+
+
+              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12"> <!-- video -->
+                <div class="col-12"> <a href="#"> <video class="video-top" data-play="hover" muted  >
+                  <source src="video/1.mp4" type="video/mp4">
+                  <source src="video/1.ogg" type="video/ogg">
+                  Your browser does not support HTML video.
+                  </video></a>
+              </div>
+              <div class="col-12">
+                <h4>SUBJECT LIVE TWO</h4>
+                <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus rem pariatur similique dolore. Nisi, harum?</P>
+              </div>
+            <div class="col-12">
+                <h7 class="float-right history">20,may,2020</h7>
+            </div>
+            </div> <!--end video -->
+            
+      </div>
+    </div>
+
+          <!------------------------------------------------------------------end-video-------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- -----------------------------------------------------------------footer------------------------------------------------------------------------------------------------- -->
+                <section>
+                    <div class="container-fluid text-center">
+                <div class="row">
+                        <div class="col-12">
+                    <a  href=""><img class=" img-footer col-12 "  width="" src="img/about us/19 .png" alt=""></a> 
+                    </div>
+                        <div class="col-12 text-center"  >
+                                
+                                    <a class="text-footer" href="home page.html">home</a>
+                                    <a class="text-footer" href="#gallery">galleries</a>
+                                    <a class="text-footer" href="#radio">radio opera</a>
+                                    <a class="text-footer" href="#music">music</a>
+                                    <a class="text-footer" href="#aducation">aducation </a>
+                                    <a class="text-footer" href="#shop">shop</a>
+                                    <a class="text-footer" href="#contact">contact us</a>
+                                    <a class="text-footer" href="live.html">live</a>
+                            
+                        
+                        
+                                </div>
+                        <br>
+                        <div class="icons col-12 ">
+                            
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                        
+                                
+                            
+                        </div>
+                        <p class="para2 col-12">2020 Atrin Adalan All Rights Reserved</p>
+                        
+                    
+                </div>
+                </div>
+                </section>
+                
+            <!-- -----------------------------------------------------------------end footer------------------------------------------------------------------------------------------------- -->
+  
+
+
+
+
+
+
+<!-- <script src="./js/swiper.min.js"></script> -->
+<script src="./js/jquery-3.4.1.min.js" ></script>
+<script src="./js/popper.min.js" ></script>
+<script src="./js/bootstrap.min.js" ></script>
+<script src="main.js" ></script>
+
+    
+</body>
+</html>   

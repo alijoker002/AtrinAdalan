@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'sab';
+   src:  url('font/Sabon\ Roman\ Small\ Caps\ &\ Oldstyle\ Figures.ttf') ;
+  }
+  
+
+body{
+    padding: 0;
+    margin: 0; 
+    background-color: #151515;
+    font-family: 'sab' !important;
+}
+.conti{
+    margin-top: 20rem;
+}
+label{
+    color: #E1A95f;
+    font-family: 'sab';
+    letter-spacing: 2px;
+
+}
+input{
+    border-radius: 0px !important;
+    background: none !important;
+    border: none !important;
+    border-bottom: 1px solid #E1A95f !important;
+    color: #959698 !important; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.custom-radio{
+    margin-left: 10px;
+}
+
+.container-p{
+    border-left: 1px solid #E1A95f;
+    color: #959698;
+    letter-spacing: 1px;
+    margin-top: 100px;
+}
+ i{
+    color: #E1A95f;
+}
+ p{
+    color: #959698;
+    letter-spacing: 1px;
+    margin-top: 50px;
+}

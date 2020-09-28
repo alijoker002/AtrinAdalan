@@ -1,0 +1,26 @@
+home page -> home
+adalan choir -> Adalan-Choir
+album -> AlbumWeb 
+article -> ArticleNew
+atrin adalan -> Atrin-Adalan1
+cart -> CartNew
+galleries-operatales -> Gallery-OperaTales
+galleries-adalanchoir -> Gallery-AdalanChoir
+galleries-atrin adalan ->  Gallery-AtrinAdalan
+galleries-radiopera ->  Gallery-RadioOpera
+live -> LiveWeb
+opera tales -> OperaTales
+radio opera -> RadioOpera
+payment -> PaymentNew
+podcast -> PadcastNew
+shop -> ShopNew
+shop-page2 -> ShopPage2
+track-music ->  TrackMusic
+video-consert -> VideoConsert
+video-diffrent ->  VideoDiffrent
+video-musicvideo ->  VideoMusicVideo
+video-page-radio-opera -> VideoRadioOpera
+
+
+
+

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    
+        <link rel="stylesheet" href="./css/bootstrap.min.css" >
+    
+    
+        <link rel="stylesheet" href="atrin.css"/>
+      <link rel="stylesheet" href="navbar.css"/>
+      <link rel="stylesheet" href="footer.css"/>
+    </head>
+<body>
+    
+ 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark  fixed-top ">
+
+        <a class="navbar-brand" href="#"><img class="atrin-logo" src="img/about us/adalanmusic.png" alt="logo atrin adalan">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="home page.html">Home</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="#news">Last News</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#radio">Radio Opera</a>
+              </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#gallery">Galleries</a>
+                </li>
+               
+                <li class="nav-item ">
+                    <a class="nav-link" href="#music">Music</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#aducation">Aducation </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#shop">Shop</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#contact">Contac Us</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="#music">Live</a>
+              </li>
+            </ul>
+    
+            <button class="btn-nav-search" ><i class="fa fa-search"  onclick="openSearch()"></i></button>
+            <form class="form-inline my-2 my-lg-0">
+                <button class="btn btn-nav-singup my-2 my-sm-0 btnfos-4"  type="button"     data-toggle="modal" data-target="#example2ModalCenter"><span>Sing Up</span>  </button>
+                <button class="btn btn-nav-login my-2 my-sm-0 btnfos-4" type="button"  data-toggle="modal" data-target="#exampleModalCenter"><span>Log In</span> </a> </button>
+            </form>
+    
+          </div>
+      </nav>
+    
+    
+      
+      
+            <!-- -----------------------------------------------------------------modal search -------------------------------------------------------------------------------------------- -->
+                  
+            <div id="myOverlay" class="overlay-search" >
+    
+                <span class="closebtn" onclick="closeSearch()" >&times;</span>
+                <div class="overlay-content ">
+                  <form action="/action_page.php">
+                    <input class="col-12 " type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                  </form>
+                </div>
+              </div>
+              <!-- -----------------------------------------------------------------end modal search -------------------------------------------------------------------------------------------- -->
+             <!-- -----------------------------------------------------------------modal log in -------------------------------------------------------------------------------------------- -->      
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content ">
+                            <div class="modal-header ">
+                              <h5 class="modal-title" id="exampleModalLongTitle">Log in</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span class="close" aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                                  
+                                <!--   user name Input-->
+                                   <input class="form-input" id="txt-input" type="text" placeholder="user name" required>
+                                   <br>
+                                <!--   Password Input-->
+                                <input class="form-input" type="password" placeholder="password" id="pwd"  name="password" required>
+                              
+                             </div>         
+                                     
+                             
+    
+                              <div class="modal-footer">
+                                <p style="margin-top: 20px;opacity: .5;"><a href="" style="color: #eeeeee;font-size: 14px;margin-right: 240px;"> forget password ? </a></p>
+                                <button type="button" class="btn  btn-modal">log  in</button>
+                              </div></div>
+                          </div>
+                        </div>
+                    
+            <!-- -----------------------------------------------------------------end modal log in -------------------------------------------------------------------------------------------- -->
+            <!-- ----------------------------------------------------------------- modal sing up -------------------------------------------------------------------------------------------- -->
+    
+                      <div class="modal fade" id="example2ModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content ">
+                            <div class="modal-header ">
+                              <h5 class="modal-title" id="exampleModalLongTitle">Sing Up</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span class="close" aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                                  
+                                  <!--   user name Input-->
+                                   <input class="form-input" id="txt-input" type="text" placeholder="name" required>
+                                <br>
+                                <input class="form-input" id="txt-input" type="text" placeholder="name" required>
+                                <br>
+                                <input class="form-input" id="email" type="email" placeholder="email" required>
+                                <br>
+                                <!--   Password Input-->
+                                <input class="form-input" type="password" placeholder="password" id="pwd"  name="password" required>
+                              
+                             </div>         
+                                             
+                              <div class="modal-footer">
+                                <button type="button" class="btn  btn-modal">sing up</button>
+                              </div></div>
+                          </div>
+                        </div>
+                    
+        <!-------------------------------------------------------------------end modal sing up-------------------------------------------------------------------------------------------- -->
+    
+    
+    
+
+
+
+<div class="container col-10 offset-1"> 
+  <div class="text-news"><p>Radio Opera</p></div>
+</div>
+
+<div class="container my-5">
+
+  <!--Section: Content-->
+  <section class="text-center  mb-5">
+    <div class="row">
+      <div class="col-md-12">
+
+        <!--Carousel Wrapper-->
+        <div id="carousel-example-1z" class="carousel slide slider-news" data-ride="carousel">
+
+          
+          <!--Slides-->
+          <div class="carousel-inner " role="listbox">
+            <!--First slide-->
+            <div class="carousel-item  carousel-item3 active">
+              <img class="d-block w-100 carousel-images" src="img/cover/IMG_9208.jpg"
+                alt="First slide">
+            </div>
+            <!--/First slide-->
+            <!--Second slide-->
+            <div class="carousel-item carousel-item3">
+              <img class="d-block w-100 carousel-images" src="img/gallery/images/adalan choir.jpg"
+                alt="Second slide">
+            </div>
+            <!--/Second slide-->
+            <!--Third slide-->
+            <div class="carousel-item carousel-item3">
+              <img class="d-block w-100 carousel-images" src="img/gallery/images/atrinadalan.jpg"
+                alt="Third slide">
+            </div>
+            <!--/Third slide-->
+          </div>
+          <!--/.Slides-->
+          <!--Controls-->
+          <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+          <!--/.Controls-->
+        </div>
+        <!--/.Carousel Wrapper-->
+
+      </div>
+    </div>
+
+  </section>
+  <!--Section: Content-->
+
+
+  <section>
+
+    <div class="container col-12">
+      <p class="para"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae aperiam neque aliquid temporibus possimus fugit ad iusto autem eius optio explicabo ex quis, repellendus ut sint et, atque error. Corrupti iusto provident laboriosam aliquid illum, officia, soluta ad, praesentium aliquam aspernatur consequatur? Consequuntur vitae laudantium aperiam quis, ipsa tempora exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consequatur voluptate eum vel eveniet repellendus nisi laudantium mollitia porro, accusantium non libero officiis saepe magni molestias velit eius sunt eos tenetur, nam ut hic omnis magnam dolorem. Suscipit corporis dolore totam sint est, commodi et quam placeat! Quia eos impedit perferendis, deleniti, neque provident odio amet laborum similique quos voluptate. Maiores a possimus nisi sint cumque magnam doloremque fugit maxime corporis autem odit voluptates sit est, aliquam doloribus, ipsa ad nobis, consectetur consequuntur! Commodi dolorum impedit, corrupti tenetur deserunt labore rem vitae architecto nam ratione repellendus tempora, eum iusto! In! Lorem ipsum, dsum dolor sit elit. Aent praeses repellendus facereminus. Animi, numquam fuga?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia eaque hic assumenda fugiat ex? Sapiente?
+        Lorem ipsum, dsum dolor sit elit. Aent praeses repellendus facereminus. Animi, numquam fuga?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia eaque hic assumenda fugiat ex? Sapiente?Lorem ipsum, dsum dolor sit elit. Aent praeses repellendus facereminus. Animi, numquam fuga?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia eaque hic assumenda fugiat ex? Sapiente?
+        Lorem ipsum, dsum dolor sit elit. Aent praeses repellendus facereminus. Animi, numquam fuga?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia eaque hic assumenda fugiat ex? Sapiente?
+        Lorem ipsum, dsum dolor sit elit. Aent praeses repellendus facereminus. Animi, numquam fuga?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia eaque hic assumenda fugiat ex? Sapiente?
+        Lorem ipsum, dsum dolor sit elit. Aent praeses repellendus facereminus. Animi, numquam fuga?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia eaque hic assumenda fugiat ex? Sapiente?</p>
+    </div>
+  </section>
+
+
+
+          <section>
+                  <div class="container-fluid py-5 text-center">
+                    <div class="row">
+                      <div class="box-logo col-xl-4  col-lg-4  col-sm-6  col-xs-12 "> <a href="atrinadalan.html"><img  src="img/about us/AtrinAdalan.png" alt=""></a></div>
+                      <div class="box-logo col-xl-4 col-lg-4 col-sm-6  col-xs-12 "><a href="radio opera.html"> <img  src="img/about us/opera tales.png" alt=""></a></div>
+                      <div class="box-logo col-xl-4 col-lg-4 col-sm-6  col-xs-12 "> <a href="adalan choir.html"> <img  src="img/about us/adalanchoir.png" alt=""></a></div>
+                      <!-- <a class="col-2" href=""></a>
+                      <a class="col-2" href=""><img  src="img/about us/opera tales.png" alt=""></a>
+                      <a class="col-2" href=""><img  src="img/about us/radio opera.png" alt=""></a> -->
+                    </div>
+                  </div>
+
+          </section>
+
+         
+         
+    
+
+</div>
+
+
+
+
+
+
+
+ <!-- -----------------------------------------------------------------footer------------------------------------------------------------------------------------------------- -->
+ <section>
+    <div class="container-fluid text-center">
+  <div class="row">
+        <div class="col-12">
+       <a  href=""><img class=" img-footer col-12 "  width="" src="img/about us/19 .png" alt=""></a> 
+    </div>
+        <div class="col-12 text-center"  >
+                
+                    <a class="text-footer" href="home page.html">home</a>
+                    <a class="text-footer" href="#gallery">galleries</a>
+                    <a class="text-footer" href="#radio">radio opera</a>
+                    <a class="text-footer" href="#music">music</a>
+                    <a class="text-footer" href="#aducation">aducation </a>
+                    <a class="text-footer" href="#shop">shop</a>
+                    <a class="text-footer" href="#contact">contact us</a>
+                    <a class="text-footer" href="live.html">live</a>
+               
+        
+        
+                </div>
+        <br>
+        <div class="icons col-12 ">
+               
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-youtube" aria-hidden="true"></i>
+          
+                
+            
+        </div>
+          <p class="para2 col-12">2020 Atrin Adalan All Rights Reserved</p>
+        
+    
+  </div>
+  </div>
+  </section>
+  
+  <!-- -----------------------------------------------------------------end footer------------------------------------------------------------------------------------------------- -->
+  
+
+
+
+
+
+
+
+    
+<script src="./js/jquery-3.4.1.min.js" ></script>
+<script src="./js/popper.min.js" ></script>
+<script src="./js/bootstrap.min.js" ></script>
+<script src="main.js" ></script>
+</body>
+</html>
